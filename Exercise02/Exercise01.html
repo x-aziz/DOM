@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #shape {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="shape"></div>
+  </body>
+  <script>
+    let start = new Date().getTime();
+    document.getElementById("shape").onclick = function () {
+      document.getElementById("shape").style.display = "none";
+      let end = new Date().getTime();
+      alert(end - start / 1000 + "  S");
+    };
+    
+  </script>
+</html>
